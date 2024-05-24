@@ -1,0 +1,53 @@
+POST http://127.0.0.1:8000/login/
+Content-Type: application/json
+
+{ "email": "amiranayel978@gmail.com", "password": "123" }
+#### 
+#####
+POST http://127.0.0.1:8000/signup/
+Content-Type: application/json
+
+{"username":"testuser", "email": "testuser@email.co", "password": "ll665066" }
+
+######
+POST http://127.0.0.1:8000/change_password/
+Content-Type: application/json
+
+{"email": "amiranayel978@gmail.com", "password": "000" , "new_password": "123"}
+
+####
+GET http://127.0.0.1:8000/test_token
+Content-Type: application/json
+Authorization: Token 53cbbaad5a9dc82d0a92eeed0cde02c7a7003eb1
+
+{}
+
+###########
+POST http://127.0.0.1:8000/logout/
+Content-Type: application/json
+Authorization: Token 53cbbaad5a9dc82d0a92eeed0cde02c7a7003eb1
+
+{}
+##################
+POST http://127.0.0.1:8000/add_user/
+Content-Type: application/json
+
+{"username":"mera", "email": "meromaroo291@gmail.com", "password": "ll665066" }
+
+#######
+GET http://127.0.0.1:8000/users/
+Content-Type: application/json
+
+#################
+
+GET http://127.0.0.1:8000/accounts/reset/done/
+Content-Type: application/json
+
+
+############
+POST http://127.0.0.1:8000/suspend/
+Content-Type: application/json
+
+{"email": "amiranayel978@gmail.com", "is_active": "False" }
+
+###########
